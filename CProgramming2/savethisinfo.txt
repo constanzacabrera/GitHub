@@ -1,0 +1,10 @@
+Inheritance & Polymorphism
+
+[Figure] - perimeter, length, area
+-> [Triangle] 	}}}
+-> [Rectangle]	}}}} Subclasses "Extend"
+-> [Square]	}}}
+
+"Is-a" vs. "Has-a" Relationships
+#47 Java Inhertiance Tutorials EX: Object Oriented Java
+SlideNerds
