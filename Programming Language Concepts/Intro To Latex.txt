@@ -1,0 +1,294 @@
+\documentclass{beamer}
+\usepackage{beamerthemesplit}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,}
+\begin{document}
+\title{A Brief Introduction To LaTex}
+\author{Constanza Cabrera, Anup Saha, David Bolanos, Luis Cadiz}
+\date{\today}
+
+\frame{\titlepage}
+
+\frame{\frametitle{Table of contents}\tableofcontents}
+
+
+\section{1 - What is Latex}
+\frame{\frametitle{1 - What is Latex?}
+\begin{itemize}
+  \item LaTeX, which is pronounced Lah-tech is a document preparation system \pause
+  \item Programmers typically use to publish professional, scientific, business-like documents and presentations so they don't stress excessively over the presence of their documents however to focus on getting the correct substance \pause
+  \item Once the document is programmed, the output given will generate a PDF file with the exact specifications that have been coded \pause
+  \item Its Stylised name is {\huge \LaTeX} \pause
+  \item Latex utilizes typesetting framework that takes the design philosophy of the presentation from content \pause
+\end{itemize}
+}
+
+\subsection{1.1 - The origin of Latex}
+\frame{\frametitle{1.1 - The origin of Latex}
+\begin{itemize}
+  \item LaTeX, is fundamentally a arranged of macros written in Tex typesetting language \pause
+  \item The developer of Tex was Donald Knuth and it was introduced in 1978 \pause
+  \item Leslie Lamport was the initial developer of LaTeX and it was introduced in 1985 \pause
+\end{itemize}
+}
+\subsection{1.2 - Why Latex?}
+\frame{\frametitle{1.2 - Why Latex?}
+\begin{itemize}
+  \item It follows a semantic order because it separates design from content \pause
+  \item It automates tasks such as page number, chapter display, table of contents and indes creation \pause
+  \item It controls each bit of the document \pause
+  \item It is a convenient system that prepares document with mathematical a scientific notations \pause
+\end{itemize}
+}
+
+
+\section{2 - Examples}
+\frame{\frametitle{2 - Examples}
+In this section, source codes and compiled documents will be showed in order to understand Latex
+}
+
+\subsection{2.1 - Creation of a simple document Source Code}
+\begin{frame}[fragile]
+\frametitle{2.1 - Creation of a simple document }
+\textbf{Source Code:}
+\defverbatim{\testslide}{\begin{verbatim}
+\documentclass{article}
+\usepackage{amsmath}
+\title{\LaTeX}
+\begin{document}
+  \maketitle
+  \LaTeX{} is a document preparation system for
+  the \TeX{} typesetting program. It offers
+  programmable desktop publishing features and
+  extensive facilities for automating most
+  aspects of typesetting and desktop publishing,
+  including numbering and  cross-referencing,
+  tables and figures, page layout,
+  bibliographies, and much more. \LaTeX{} was
+\end{verbatim}}
+
+\only<1>{%
+\testslide
+}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\defverbatim{\testslide}{\begin{verbatim}
+
+  originally written in 1984 by Leslie Lamport
+  and has become the  dominant method for using
+  \TeX; few people write in plain \TeX{} anymore.
+  The current version is \LaTeXe.
+  % This is a comment, not shown in final output.
+  % The following shows typesetting  power of LaTeX:
+
+\end{document}
+\end{verbatim}}
+
+\only<1>{%
+\testslide
+}
+
+\end{frame}
+
+
+\frame{
+\textbf{Outcome:}
+\includegraphics[scale=0.6]{ltxe}
+}
+
+
+
+
+\subsection{2.2 - Using mathematical and scientific notations}
+\begin{frame}[fragile]
+\frametitle{2.2 - Using mathematical and scientific notations}
+\textbf{Source Code for fractions:}
+\defverbatim{\testslide}{\begin{verbatim}
+\frac{1}{2}
+\sqrt{x}
+\end{verbatim}}
+
+\only<1>{%
+\testslide
+}
+\textbf{Outcome:}\\
+\includegraphics[scale=1]{mathFra}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\textbf{Source Code for polynomials:}
+\defverbatim{\testslide}{\begin{verbatim}
+    \[ x^n + y^n = z^n \]
+\end{verbatim}}
+
+\only<1>{%
+\testslide
+}
+
+\textbf{Outcome:}\\
+\[ x^n + y^n = z^n \]
+
+\end{frame}
+
+\begin{frame}[fragile]
+\textbf{Source Code for Binomials:}
+\defverbatim{\testslide}{\begin{verbatim}
+    \[
+        \binom{n}{k} = \frac{n!}{k!(n-k)!}
+    \]
+\end{verbatim}}
+
+\only<1>{%
+\testslide
+}
+
+\textbf{Outcome:}\\
+\[
+    \binom{n}{k} = \frac{n!}{k!(n-k)!}
+\]
+
+\end{frame}
+
+\begin{frame}[fragile]
+\textbf{Source Code for Integrals:}
+\defverbatim{\testslide}{\begin{verbatim}
+    $$\int_{a}^{b} x^2 dx$$
+\end{verbatim}}
+
+\only<1>{%
+\testslide
+}
+
+\textbf{Outcome:}\\
+$$\int_{a}^{b} x^2 dx$$
+
+\end{frame}
+
+
+\section{3 - Where to Acquire LaTex}
+\frame{\frametitle{3 - Where to Acquire LaTex}
+In this section, a quick explanation of how to and where to use LaTex will be given. There are several options.}
+
+\frame{\frametitle{3.1 - Latex Online Compilers}
+\begin{itemize}
+    \item The following are websites for online compiler for LaTex. It provides with a user friendly interface for new and old LaTex users. \pause
+    \begin{itemize}
+        \item ShareLaTex - \textbf{https://www.sharelatex.com/}\pause
+        \item Papeeria - \textbf{https://papeeria.com/}\pause
+        \item Overleaf - \textbf{https://www.overleaf.com/}\pause
+        \item Datazar - \textbf{https://www.datazar.com/}\pause
+        \item LaTex Base - \textbf{https://latexbase.com/}\pause
+    \end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{3.2 - Latex Download-able Compilers}
+\begin{itemize}
+  \item Depending on the operating system running on your PC, a series of programs must be downloaded. \pause
+  \begin{itemize}
+    \item \textbf{FOR WINDOWS:} Check out the MiKTeX or proTeXt or TeX Live distributions; they contain a complete TeX system with LaTeX itself and editors to write documents. \pause
+    \item \textbf{FOR MAC:} The MacTeX distribution contains everything you need, including a complete TeX system with LaTeX itself and editors to write documents. \pause
+    \item \textbf{FOR LINUX:} Check your Linux distributions software source for a TeX distribution including LaTeX. You can also install TeX Live directly. \pause
+  \end{itemize}
+\end{itemize}
+}
+
+\section{4 - Structure of a LaTex File}
+\frame{\frametitle{4 - Structure of a LaTex file}
+In this section, a quick explanation of the different kinds of structures a LaTex file can have.}
+
+\frame{\frametitle{4.1 - Overall Layout & Code Examples}
+\begin{itemize}
+    \item The Document class determines the overall layout of the document. Here you can see a couple of commands for an \textbf \{article\} structure: \newline \backslash \textbf{documentclass[options]\{article\}} \newline \backslash \textbf{\{begin\{document\}} \newline \backslash \textbf{end\{document\}}
+\end{itemize}
+}
+
+\frame{\frametitle{4.2 - Latex Download-able Compilers}
+\begin{itemize}
+    \item In addition to article class, which is a good all-purpose class, other
+commonly-used classes are: \pause
+    \begin{itemize}
+        \item \textbf{report} for longer documents containing chapters\pause
+        \item \textbf{thesis} for writing an RPI thesis \pause
+        \item \textbf{book} for books \pause
+        \item \textbf{letter} for letters \pause
+        \item \textbf{slides} for making transparencies \pause
+    \end{itemize}
+    \item Among other things, the classes provide heading commands, such as
+    \backslash part, \backslash chapter, \backslash section
+\end{itemize}
+}
+
+\section{5 - LaTex Basics}
+\frame{\frametitle{5 - LaTex Basics}
+In this section, a quick review of a couple of basic commands and other such knowledge to know when coding in LaTex.}
+
+\frame{\frametitle{5.1 - Things to Know}
+\begin{itemize}
+    \item The backslash “\textbackslash” is used to begin all LATEX commands.\pause
+    \item In the input file (.tex file), 
+    \newline words are separated by one or more blank spaces, 
+    \newline paragraphs are separated by one (or more) blank lines. \pause
+    \item Commands are case-sensitive. 
+    \newline Commands are all lowercase unless there’s a good reason to use uppercase. \newline For example: \backslash Delta \rightarrow $\Delta$ while \backslash delta \rightarrow $\delta$.
+    \end{itemize}
+}
+
+\frame{\frametitle{5.1 - Things to Know}
+\begin{itemize}
+\item The following link \url{https://www.noao.edu/noaoprop/help/symbols/}
+\end{itemize}
+}
+
+\frame{\frametitle{5.1 - Things to Know}
+\begin{itemize}
+    \item \newline Some commands take arguments, \newline which are enclosed in braces:\newline {\textbackslash textbf\{this text will be bold\}}
+\end{itemize}
+}
+
+\frame{\frametitle{5.2 - Things to Know: Displaying Equations}
+\begin{itemize}
+    \item There are four environments for formatting equations that are to be set off
+from surrounding text. The code to initiate each environment follows each, respectively.
+    \begin{itemize}
+        \item \textbackslash \textbd{\{Display Math\}} (for unnumbered equations) \pause
+        \newline \textbackslash \$\$...\$\$ \pause
+        \newline \textbackslash begin\{displaymath\} \pause
+        \newline \textbackslash end\{displaymath\} \pause \newline 
+        \item \texttextbd{\{Equation Environment\}} (for numbered equations) \pause
+        \newline \textbackslash begin\{equation\} ... \textbackslash end\{equation\} 
+    \end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{5.2 - Things to Know: Displaying Equations}
+\begin{itemize}
+        \item \textbd{\{Eqnarray Environment\}} (for multiline equations) \pause
+        \newline \textbackslash begin\{eqnarray\} \pause
+        \newline \textbackslash end\{eqnarray\} \pause \newline 
+        \item \textbackslash \textbd{\{Array Environment\}} (for matrices, etc.) \pause
+        \newline \textbackslash begin\{array\} \pause
+        \newline \textbackslash end\{array\}
+\end{itemize}
+}
+
+\end{document}
+
+
+
+
+
