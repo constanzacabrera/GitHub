@@ -7,8 +7,8 @@ If any questions or concerns may arise, please contact me using the
 information provided on my GITHUB profile.
 ------------------------------------------------------------------------
 
-PROJECT TITLE: Current Code
-PURPOSE OF PROJECT: Provide user with an idea of my abilities as a programmer.
-VERSION or DATE: 11.1.2017
-AUTHORS: Constanza Cabrera, and others that will be mentioned directly in code.
+PROJECT TITLE: Current Code /n
+PURPOSE OF PROJECT: Provide user with an idea of my abilities as a programmer. /n
+VERSION or DATE: 11.1.2017 /n
+AUTHORS: Constanza Cabrera, and others that will be mentioned directly in code. /n
 USER INSTRUCTIONS: Scroll through documents, read through code. 
