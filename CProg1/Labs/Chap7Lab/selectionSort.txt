@@ -1,0 +1,23 @@
+	
+	public void selectionSort()
+	{
+		int maxIndex;
+		int maxValue;
+		
+		for (int startScan = 0; startScan < data.length-1; startScan++)
+		{
+			maxIndex = startScan;
+			maxValue = data[startScan];
+			for (int index = startScan + 1; index < data.length; index++)
+			{
+				if (data[index] > maxValue)
+				{
+					maxValue = data[index];
+					maxIndex = index;
+				}
+			}
+			data[maxIndex] = data[startScan];
+			data[startScan] = maxValue;
+		}
+	}
+}
